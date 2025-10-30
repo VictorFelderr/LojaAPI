@@ -17,6 +17,8 @@ builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 // Adiciona o Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
